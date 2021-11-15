@@ -1,0 +1,406 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+    *{
+      position: absolute;
+    }
+  
+    .demoheader1 {
+      position: absolute;
+      width: 50px;
+      height: 25px;
+      background: black;
+      left: 200px;
+
+    }
+    #demo1 {
+      background: green;
+      position: absolute;
+      top: 400px;
+      left: 200px;
+      z-index: -1;
+      display: inline-block;
+    }
+    #demo2 {
+      height: 10px;
+      width: 10px;
+      background: green;
+      position: absolute;
+      top: 200px;
+      left: 150px;
+      z-index: -1;
+      display: inline-block;
+
+    }
+    #demo3 {
+      height: 10px;
+      width: 10px;
+      background: green;
+      position: absolute;
+      top: 500px;
+      left: 300px;
+      z-index: -1;
+      display: inline-block;
+
+    }
+    #demo7 {
+      height: 10px;
+      width: 10px;
+      background: green;
+      position: absolute;
+      top: 200px;
+      left: 400px;
+      z-index: -1;
+      display: inline-block;
+
+    }
+    #demo5 {
+      height: 10px;
+      width: 10px;
+      background: green;
+      position: absolute;
+      top: 150px;
+      left: 110px;
+      z-index: -1;
+      display: inline-block;
+
+    }
+    #demo6 {
+      height: 10px;
+      width: 10px;
+      background: green;
+      position: absolute;
+      top: 210px;
+      left: 180px;
+      z-index: -1;
+      display: inline-block;
+
+    }
+    #demo7 {
+      height: 10px;
+      width: 10px;
+      background: green;
+      position: absolute;
+      top: 200px;
+      left: 400px;
+      z-index: -1;
+      display: inline-block;
+
+    }
+    #demo8 {
+      height: 10px;
+      width: 10px;
+      background: green;
+      position: absolute;
+      top: 100px;
+      left: 400px;
+      z-index: -1;
+      display: inline-block;
+
+    }
+    #demo9 {
+      height: 10px;
+      width: 10px;
+      background: green;
+      position: absolute;
+      top: 400px;
+      left: 300px;
+      z-index: -1;
+      display: inline-block;
+}
+    #demo11 { 
+      background: green;
+      position: absolute;
+      top: 400px;
+      left: 300px;
+      z-index: -1;
+      display: inline-block;  
+    }
+    </style>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <div id="demo">
+<div id="demoheader"></div>
+  </div>
+<div id="demo1"></div>
+<div id="demo2"></div>
+<div id="demo3"></div>
+<div id="demo4"></div>
+
+<div id="demo5"></div>
+<div id="demo6"></div>
+<div id="demo7"></div>
+<div id="demo8"></div>
+<div id="demo9"></div>
+<div id="demo11"></div>
+<br>
+<br>
+<div id="demo10">0</div>
+<br>
+<br>
+<div id="clock">0</div>
+<br>
+<br>
+<script>
+
+document.body.style.background = "#f3f3"
+
+let i = 1
+function myFunction(){
+if (i >= 8)  {
+   window.location.reload()
+
+}
+}
+
+
+
+
+let v = 11
+function clock(){
+  if (v !== 0 )
+  document.getElementById("clock").innerHTML = --v
+  setTimeout(clock, 1000)
+ if(v === 0) {
+   document.getElementById("clock").innerHTML = ""
+ } 
+}
+
+clock()
+
+document.getElementById("demo1").addEventListener("mouseenter", newFunctionTen)
+document.getElementById("demo2").addEventListener("mouseenter", newFunctionTenOne)
+document.getElementById("demo3").addEventListener("mouseenter", newFunctionTenTwo)
+document.getElementById("demo4").addEventListener("mouseenter", newFunctionTenThree)
+document.getElementById("demo5").addEventListener("mouseenter", newFunctionTenFour)
+document.getElementById("demo6").addEventListener("mouseenter", newFunctionTenFive)
+document.getElementById("demo7").addEventListener("mouseenter", newFunctionTenSix)
+document.getElementById("demo8").addEventListener("mouseenter", newFunctionTenSeven)
+document.getElementById("demo9").addEventListener("mouseenter", newFunctionTenEight)
+document.getElementById("demo11").addEventListener("mouseenter", newFunctionTenTwentyOne)
+
+
+
+
+
+function newFunctionTen(){
+  myFunction()
+
+  document.getElementById("demo10").innerText = i++
+  document.getElementById("demo1").remove()
+}
+
+function newFunctionTenOne(){
+  myFunction()
+
+  document.getElementById("demo10").innerText = i++
+  document.getElementById("demo2").remove()
+}
+
+function newFunctionTenTwo(){
+  myFunction()
+
+  document.getElementById("demo10").innerText = i++
+document.getElementById("demo3").remove()
+
+}
+
+function newFunctionTenThree(){
+  myFunction()
+
+  document.getElementById("demo10").innerText = i++
+
+document.getElementById("demo4").remove()
+
+
+}
+
+function newFunctionTenFour(){
+  myFunction()
+
+
+  document.getElementById("demo10").innerText = i++
+
+  document.getElementById("demo5").remove()
+  
+}
+
+function newFunctionTenFive(){
+  myFunction()
+
+
+
+  document.getElementById("demo10").innerText = i++
+
+  document.getElementById("demo6").remove()
+ 
+}
+
+function newFunctionTenSix(){
+  myFunction()
+
+  document.getElementById("demo10").innerText = i++
+
+  document.getElementById("demo7").remove()
+
+
+}
+
+function newFunctionTenSeven(){
+  myFunction()
+
+  document.getElementById("demo10").innerText = i++
+
+document.getElementById("demo8").remove()
+
+}
+
+function newFunctionTenEight(){
+  myFunction()
+
+  document.getElementById("demo10").innerText = i++
+
+document.getElementById("demo9").remove()
+}
+
+function newFunctionTenTwentyOne(){
+  myFunction()
+  document.getElementById("demo10").innerText = i++
+  document.getElementById("demo11").remove()
+}
+
+
+
+
+
+
+ let x = Math.floor(Math.random()* 400)
+let y = Math.floor(Math.random()* 400)
+let one = Math.floor(Math.random()* 35) + 15
+let two = Math.floor(Math.random()*35) + 15
+document.getElementById("demo1").style.top = x + "px"
+document.getElementById("demo1").style.left = y + "px"
+document.getElementById("demo1").style.height = one + "px"
+document.getElementById("demo1").style.width = two + "px"
+
+
+
+let a = Math.floor(Math.random()* 400)
+let b = Math.floor(Math.random()* 400)
+let seventeen = Math.floor(Math.random()* 35)+ 15
+let eighteen = Math.floor(Math.random()*35)+ 15
+document.getElementById("demo2").style.top = a + "px"
+document.getElementById("demo2").style.left = b + "px"
+document.getElementById("demo2").style.height = seventeen + "px"
+document.getElementById("demo2").style.width = eighteen + "px"
+
+let c = Math.floor(Math.random()* 400)
+let d = Math.floor(Math.random()* 400)
+let three = Math.floor(Math.random()* 35)+ 15
+let four = Math.floor(Math.random()*35)+ 15
+document.getElementById("demo3").style.top = c + "px"
+document.getElementById("demo3").style.left = d + "px"
+document.getElementById("demo3").style.height = three + "px"
+document.getElementById("demo3").style.width = four + "px"
+
+
+let e = Math.floor(Math.random()* 400)
+let f = Math.floor(Math.random()* 400)
+let five = Math.floor(Math.random()* 35)+ 15
+let six = Math.floor(Math.random()*35)+ 15
+document.getElementById("demo4").style.top = e + "px"
+document.getElementById("demo4").style.left = f + "px"
+document.getElementById("demo4").style.height = five + "px"
+document.getElementById("demo4").style.width = six + "px"
+
+let g = Math.floor(Math.random()* 400)
+let h = Math.floor(Math.random()* 400)
+let seven = Math.floor(Math.random()* 50)+ 15
+let eight = Math.floor(Math.random()*50)+ 15
+document.getElementById("demo5").style.top = g + "px"
+document.getElementById("demo5").style.left = h + "px"
+document.getElementById("demo5").style.height = seven + "px"
+document.getElementById("demo5").style.width = eight + "px"
+
+
+let z = Math.floor(Math.random()* 400)
+let j = Math.floor(Math.random()* 400)
+let nine = Math.floor(Math.random()* 50)+ 15
+let ten = Math.floor(Math.random()*50)+ 15
+document.getElementById("demo6").style.top = z + "px"
+document.getElementById("demo6").style.left = j + "px"
+document.getElementById("demo6").style.height = nine + "px"
+document.getElementById("demo6").style.width = ten + "px"
+
+
+let k = Math.floor(Math.random()* 400)
+let l = Math.floor(Math.random()* 400)
+let eleven = Math.floor(Math.random()* 50)+ 15
+let twelve = Math.floor(Math.random()*50)+ 15
+document.getElementById("demo7").style.top = k + "px"
+document.getElementById("demo7").style.left = l + "px"
+document.getElementById("demo7").style.height = eleven + "px"
+document.getElementById("demo7").style.width = twelve + "px"
+
+let m = Math.floor(Math.random()* 400)
+let n = Math.floor(Math.random()* 400)
+let thirteen = Math.floor(Math.random()* 50) + 15
+let fourteen = Math.floor(Math.random()*50) + 15
+document.getElementById("demo8").style.top = m + "px"
+document.getElementById("demo8").style.left = n + "px"
+document.getElementById("demo8").style.height = thirteen + "px"
+document.getElementById("demo8").style.width = fourteen + "px"
+
+
+let o = Math.floor(Math.random()* 400)
+let p = Math.floor(Math.random()* 400)
+let fifteen = Math.floor(Math.random()* 50) + 15
+let sixteen = Math.floor(Math.random()*50) + 15
+document.getElementById("demo9").style.top = o + "px"
+document.getElementById("demo9").style.left = p + "px"
+document.getElementById("demo9").style.height = fifteen + "px"
+document.getElementById("demo9").style.width = sixteen + "px"
+
+let q = Math.floor(Math.random()* 400)
+let r = Math.floor(Math.random()* 400)
+let nineteen = Math.floor(Math.random()* 50) + 15
+let twenty = Math.floor(Math.random()*50) + 15
+document.getElementById("demo11").style.top = q + "px"
+document.getElementById("demo11").style.left = r + "px"
+document.getElementById("demo11").style.height = nineteen + "px"
+document.getElementById("demo11").style.width = twenty + "px"
+
+
+const body = document.body
+
+
+function newFunctionTenTwenty(){
+  if (location.reload()) {
+    let x = document.getElementById("demo11")
+    body.append(x)
+
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
+
+
+
+
