@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+    * {
+      position: absolute;
+    }
+    #demo {
+      background: black;
+    }
+    #demo1 {
+      background: black;
+      
+    }
+    #demo3 {
+      background: black;
+    }
+    #demo4 {
+      background: black;
+    }
+  
+    </style>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+
+
+<body>
+
+
+
+<div id="demo2"></div>
+<div id="demo"></div>
+<div id="demo1"></div>
+<div id="demo3"></div>
+<div id="demo4"></div>
+<div id="demo5"></div>
+
+
+
+
+  <script>
+
+document.getElementById("demo").addEventListener("mouseenter", newFunction)
+document.getElementById("demo1").addEventListener("mouseenter", newFunctionOne)
+document.getElementById("demo3").addEventListener("mouseenter", newFunctionTwo)
+document.getElementById("demo4").addEventListener("mouseenter", newFunctionThree)
+document.getElementById("demo5").addEventListener("mouseenter", newFunctionThree)
+
+
+
+let i = 1
+function newFunction(){
+  if (i === 4) {
+    location.repalce()
+    }
+  document.getElementById("demo2").innerHTML = i++
+
+  document.getElementById("demo").remove()
+
+}
+
+function newFunctionOne(){
+  if (i === 4) {
+    location.reload()
+     }
+  document.getElementById("demo2").innerHTML = i++
+  document.getElementById("demo1").remove()
+
+}
+function newFunctionTwo(){
+  if (i === 4) {
+    location.reload()
+     }
+  document.getElementById("demo2").innerHTML = i++
+  document.getElementById("demo3").remove()
+
+}
+function newFunctionThree(){
+  if (i === 4) {
+    location.reload()
+     }
+  document.getElementById("demo2").innerHTML = i++
+  document.getElementById("demo4").remove()
+
+}
+function newFunctionThree(){
+  if (i === 4) {
+    location.reload()
+     }
+  document.getElementById("demo2").innerHTML = i++
+  document.getElementById("demo4").remove()
+
+}
+
+
+let x = Math.floor(Math.random()*500)
+let y = Math.floor(Math.random()*500)
+let a = Math.floor(Math.random()*500)
+let b = Math.floor(Math.random()*500)
+let c = Math.floor(Math.random()*500)
+let d = Math.floor(Math.random()*500)
+let e = Math.floor(Math.random()*500)
+let f = Math.floor(Math.random()*500)
+let g = Math.floor(Math.random()*500)
+let h = Math.floor(Math.random()*500)
+let j = Math.floor(Math.random()*500)
+let k = Math.floor(Math.random()*500)
+let l = Math.floor(Math.random()*500)
+let m = Math.floor(Math.random()*500)
+let n = Math.floor(Math.random()*500)
+let o = Math.floor(Math.random()*500)
+
+document.getElementById("demo").style.top = x + "px"
+document.getElementById("demo").style.left = y + "px"
+document.getElementById("demo1").style.top = a + "px"
+document.getElementById("demo1").style.left = b + "px"
+
+document.getElementById("demo").style.height = c + "px"
+document.getElementById("demo").style.width = d + "px"
+document.getElementById("demo1").style.height = e + "px"
+document.getElementById("demo1").style.width = f + "px"
+
+document.getElementById("demo3").style.height = g + "px"
+document.getElementById("demo3").style.width = h + "px"
+document.getElementById("demo3").style.top = k + "px"
+document.getElementById("demo3").style.left = j + "px"
+
+document.getElementById("demo4").style.height = l + "px"
+document.getElementById("demo4").style.width = m + "px"
+document.getElementById("demo4").style.top = n + "px"
+document.getElementById("demo4").style.left = o + "px"
+
+
+
+
+    </script>
+  
+</body>
+</html>
+
+
