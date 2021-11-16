@@ -1,57 +1,114 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <style>
-
-
-
-
-  </style>
+    * {
+      position: absolute;
+    }
+    #demo {
+      background: black;
+    }
+    #demo1 {
+      background: black;
+      
+    }
+    #demo3 {
+      background: black;
+    }
+    
+    </style>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
 </head>
+
+
+
 <body>
+
+
+
+<div id="demo2"></div>
+<div id="demo"></div>
+<div id="demo1"></div>
+<div id="demo3"></div>
 
 
 
   <script>
 
-const header = document.createElement("h1")
-const div = document.createElement("div")
-const divOne = document.createElement("div")
-const br = document.createElement("br")
-const btn = document.createElement("button")
-const btnOne = document.createElement("button")
-const body = document.body
-body.append(header, div, divOne, br, btn, btnOne)
+document.getElementById("demo").addEventListener("mouseenter", newFunction)
+document.getElementById("demo1").addEventListener("mouseenter", newFunctionOne)
+document.getElementById("demo3").addEventListener("mouseenter", newFunctionTwo)
 
-header.innerHTML = "counter"
-div.innerHTML = 0
-btn.innerHTML = "add"
-btnOne.innerHTML = "min"
 
-divOne.id = "demo1"
-div.id = "demo"
-btn.addEventListener("click", newFunction)
-btnOne.addEventListener("click", newFunctionOne)
-let x = -1
+
 let i = 1
 function newFunction(){
+  if (i === 3) {
+    location.replace("level2.html")
+    }
+  document.getElementById("demo2").innerHTML = i++
 
-  document.getElementById("demo").innerHTML = i++
+  document.getElementById("demo").remove()
+
 }
 
 function newFunctionOne(){
+  if (i === 3) {
+    location.replace("level2.html")
+     }
+  document.getElementById("demo2").innerHTML = i++
+  document.getElementById("demo1").remove()
 
-  document.getElementById("demo1").innerHTML = x--
-  
+}
+function newFunctionTwo(){
+  if (i === 3) {
+    location.replace("level2.html")
+     }
+  document.getElementById("demo2").innerHTML = i++
+  document.getElementById("demo3").remove()
+
 }
 
 
 
 
-  </script>
+let x = Math.floor(Math.random()*500)
+let y = Math.floor(Math.random()*500)
+let a = Math.floor(Math.random()*500)
+let b = Math.floor(Math.random()*500)
+let c = Math.floor(Math.random()*500)
+let d = Math.floor(Math.random()*500)
+let e = Math.floor(Math.random()*500)
+let f = Math.floor(Math.random()*500)
+let g = Math.floor(Math.random()*500)
+let h = Math.floor(Math.random()*500)
+let j = Math.floor(Math.random()*500)
+let k = Math.floor(Math.random()*500)
+let l = Math.floor(Math.random()*500)
+let m = Math.floor(Math.random()*500)
+let n = Math.floor(Math.random()*500)
+let o = Math.floor(Math.random()*500)
+
+document.getElementById("demo").style.top = x + "px"
+document.getElementById("demo").style.left = y + "px"
+document.getElementById("demo1").style.top = a + "px"
+document.getElementById("demo1").style.left = b + "px"
+
+document.getElementById("demo").style.height = c + "px"
+document.getElementById("demo").style.width = d + "px"
+document.getElementById("demo1").style.height = e + "px"
+document.getElementById("demo1").style.width = f + "px"
+
+document.getElementById("demo3").style.height = g + "px"
+document.getElementById("demo3").style.width = h + "px"
+document.getElementById("demo3").style.top = k + "px"
+document.getElementById("demo3").style.left = j + "px"
+
+
+    </script>
+  
 </body>
 </html>
