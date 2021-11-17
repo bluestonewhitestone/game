@@ -21,6 +21,9 @@
     #demo5 {
       background: black;
     }
+    #demo7 {
+      background: black;
+    }
   
     </style>
   <meta charset="UTF-8">
@@ -40,6 +43,7 @@
 <div id="demo3"></div>
 <div id="demo4"></div>
 <div id="demo5"></div>
+<div id="demo7"></div>
 
 
 
@@ -51,6 +55,7 @@ document.getElementById("demo1").addEventListener("mouseenter", newFunctionOne)
 document.getElementById("demo3").addEventListener("mouseenter", newFunctionTwo)
 document.getElementById("demo4").addEventListener("mouseenter", newFunctionThree)
 document.getElementById("demo5").addEventListener("mouseenter", newFunctionFour)
+document.getElementById("demo7").addEventListener("mouseenter", newFunctionFive)
 
 
 
@@ -66,7 +71,7 @@ function newFunction(){
 }
 
 function newFunctionOne(){
-  if (i === 5) {
+  if (i === 8) {
     location.replace("/level4.html")
      }
   document.getElementById("demo2").innerHTML = i++
@@ -74,7 +79,7 @@ function newFunctionOne(){
 
 }
 function newFunctionTwo(){
-  if (i === 5) {
+  if (i === 8) {
     location.replace("/level4.html")
      }
   document.getElementById("demo2").innerHTML = i++
@@ -82,7 +87,7 @@ function newFunctionTwo(){
 
 }
 function newFunctionThree(){
-  if (i === 5) {
+  if (i === 8) {
     location.replace("/level4.html")
      }
   document.getElementById("demo2").innerHTML = i++
@@ -90,11 +95,27 @@ function newFunctionThree(){
 
 }
 function newFunctionThree(){
-  if (i === 5) {
+  if (i === 8) {
+    location.replace("/level4.html")
+     }
+  document.getElementById("demo2").innerHTML = i++
+  document.getElementById("demo4").remove()
+
+}
+function newFunctionFour(){
+  if (i === 8) {
     location.replace("/level4.html")
      }
   document.getElementById("demo2").innerHTML = i++
   document.getElementById("demo5").remove()
+
+}
+function newFunctionFive(){
+  if (i === 8) {
+    location.replace("/level4.html")
+     }
+  document.getElementById("demo2").innerHTML = i++
+  document.getElementById("demo7").remove()
 
 }
 
@@ -118,6 +139,15 @@ let p = Math.floor(Math.random()*500)
 let q = Math.floor(Math.random()*500)
 let r = Math.floor(Math.random()*500)
 let s = Math.floor(Math.random()*500)
+let t = Math.floor(Math.random()*500)
+let u = Math.floor(Math.random()*500)
+let v = Math.floor(Math.random()*500)
+let w = Math.floor(Math.random()*500)
+let one = Math.floor(Math.random()*500)
+let two = Math.floor(Math.random()*500)
+let three = Math.floor(Math.random()*500)
+let four = Math.floor(Math.random()*500)
+
 
 document.getElementById("demo").style.top = x + "px"
 document.getElementById("demo").style.left = y + "px"
@@ -145,11 +175,19 @@ document.getElementById("demo5").style.width = q + "px"
 document.getElementById("demo5").style.top = r + "px"
 document.getElementById("demo5").style.left = s + "px"
 
+document.getElementById("demo5").style.height = t + "px"
+document.getElementById("demo5").style.width = u + "px"
+document.getElementById("demo5").style.top = v + "px"
+document.getElementById("demo5").style.left = w + "px"
+
+document.getElementById("demo7").style.height = one + "px"
+document.getElementById("demo7").style.width = two + "px"
+document.getElementById("demo7").style.top = three + "px"
+document.getElementById("demo7").style.left = four + "px"
+
 
 
     </script>
   
 </body>
 </html>
-
-
